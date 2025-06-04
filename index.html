@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عيد أضحى مبارك وكوميدي</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">عيد أضحى مبارك <span class="emoji">🎉</span></h1>
+            <p class="subtitle">أضحك معنا في هذا العيد المبارك</p>
+        </header>
+
+        <div class="sheep-container">
+            <div class="sheep" id="sheep">
+                <div class="sheep-body">
+                    <div class="sheep-face">
+                        <div class="sheep-eyes">
+                            <div class="eye left"></div>
+                            <div class="eye right"></div>
+                        </div>
+                        <div class="sheep-mouth"></div>
+                    </div>
+                    <div class="sheep-legs">
+                        <div class="leg"></div>
+                        <div class="leg"></div>
+                        <div class="leg"></div>
+                        <div class="leg"></div>
+                    </div>
+                </div>
+                <div class="speech-bubble hidden" id="speech-bubble">
+                    <p id="joke-text">اضغط علي للمفاجأة!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>أجمل التهاني بعيد الأضحى المبارك</h2>
+            <p>اضغط على الزر لتلقي تهنئة مميزة</p>
+            <button id="greeting-btn" class="btn">اضغط هنا للتهنئة</button>
+            <div id="greeting-result" class="greeting-result"></div>
+        </div>
+
+        <div class="eid-countdown">
+            <h3>العد التنازلي للعيد</h3>
+            <div class="countdown-timer" id="countdown">
+                <div class="time-block">
+                    <span id="days">00</span>
+                    <span class="time-label">أيام</span>
+                </div>
+                <div class="time-block">
+                    <span id="hours">00</span>
+                    <span class="time-label">ساعات</span>
+                </div>
+                <div class="time-block">
+                    <span id="minutes">00</span>
+                    <span class="time-label">دقائق</span>
+                </div>
+                <div class="time-block">
+                    <span id="seconds">00</span>
+                    <span class="time-label">ثواني</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="eid-game">
+            <h3>لعبة العيد</h3>
+            <p>حاول الإمساك بالخروف قبل أن يهرب!</p>
+            <div class="game-container">
+                <div id="game-sheep" class="game-sheep">🐑</div>
+                <div id="score-display">النقاط: <span id="score">0</span></div>
+            </div>
+            <button id="start-game" class="btn">ابدأ اللعبة</button>
+        </div>
+
+        <div class="eid-wishes">
+            <h3>أرسل تهنئة لأحبائك</h3>
+            <div class="wish-form">
+                <input type="text" id="name-input" placeholder="اسم الشخص">
+                <button id="generate-wish" class="btn">إنشاء تهنئة</button>
+            </div>
+            <div id="wish-result" class="wish-result"></div>
+            <button id="share-btn" class="btn share-btn hidden">
+                <i class="fas fa-share-alt"></i> مشاركة
+            </button>
+        </div>
+
+        <div class="confetti-container" id="confetti-container"></div>
+
+        <footer>
+            <p>كل عام وأنتم بخير! عيد أضحى مبارك 🌙</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
